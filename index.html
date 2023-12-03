@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Color Machine</h1>
+        </header>
+        <div class="container">
+            <div id="currentColor" class="color">
+                <h2 id="rgbColor">RGB: (255, 255, 255)</h2>
+                <h2 id="hexColor">Hex: #ffffff</h2>
+            </div>
+            
+            <div class="colorValues">
+                <div class="colorValue">
+                    <button class="btn redBtn" id="increaseRed">Increase Red</button>
+                    <span id="redValue">255</span>
+                    <button class="btn redBtn" id="decreaseRed">Decrease Red</button>
+                </div>
+                <div class="colorValue">
+                    <button class="btn greenBtn" id="increaseGreen">Increase Green</button>
+                    <span id="greenValue">255</span>
+                    <button class="btn greenBtn" id="decreaseGreen">Decrease Green</button>
+                </div>
+                <div class="colorValue">
+                    <button class="btn blueBtn" id="increaseBlue">Increase Blue</button>
+                    <span id="blueValue">255</span>
+                    <button class="btn blueBtn" id="decreaseBlue">Decrease Blue</button>
+                </div>
+                
+            </div>
+
+            <div class="colorInput">
+                <label for="hexInput">Hex:</label>
+                <input type="text" id="hexInput" value="ffffff" />
+                <button class="btn" id="applyHex">Apply HEX</button>
+            </div>
+
+            <div class="colorInput">
+                <label for="manualRed">Red:</label>
+                <input type="number" id="manualRed" />
+                <label for="manualGreen">Green:</label>
+                <input type="number" id="manualGreen" />
+                <label for="manualBlue">Blue:</label>
+                <input type="number" id="manualBlue" />
+                <button class="btn" id="applyRGB">Apply RGB</button>
+            </div>
+            
+            <button class="btn" id="randomizeColor">Randomize Color</button>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
